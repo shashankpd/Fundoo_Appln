@@ -1,6 +1,0 @@
-@fundoo_application_HostAddress = http://localhost:5208
-
-GET {{fundoo_application_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
