@@ -1,0 +1,168 @@
+2024-04-11 10:53:11.2911|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 10:53:11.5386|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 10:53:11.5386|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 10:53:11.5386|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 10:53:11.5386|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 10:53:11.5386|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\fundoo application\fundoo application
+2024-04-11 10:53:12.0341|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 10:53:12.3431|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 308.3378ms
+2024-04-11 10:53:12.4108|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 10:53:12.4108|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 10:53:12.4108|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 9.0865ms
+2024-04-11 10:53:12.4725|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 61.7335ms
+2024-04-11 10:53:12.7672|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-11 10:53:12.7833|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/favicon-32x32.png - - -
+2024-04-11 10:53:12.8024|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-04-11 10:53:12.8024|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/favicon-32x32.png - 200 628 image/png 19.5182ms
+2024-04-11 10:53:12.8616|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 94.3567ms
+2024-04-11 10:53:39.0637|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/GetByCollabId?userid=1 - - -
+2024-04-11 10:53:39.0637|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-11 10:53:39.1101|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-11 10:53:40.4916|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved 3 label(s) for user with ID 1
+2024-04-11 10:53:40.5033|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-11 10:53:40.5470|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 1425.2997ms
+2024-04-11 10:53:40.5482|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-11 10:53:40.5482|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/GetByCollabId?userid=1 - 200 - application/json;+charset=utf-8 1485.4081ms
+2024-04-11 10:57:38.3407|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 10:57:38.5137|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 10:57:38.5137|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 10:57:38.5137|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 10:57:38.5161|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 10:57:38.5161|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\fundoo application\fundoo application
+2024-04-11 10:57:39.3900|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 10:57:39.8271|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 438.8198ms
+2024-04-11 10:57:39.8457|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 10:57:39.8457|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 10:57:39.8457|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 7.5650ms
+2024-04-11 10:57:39.8915|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 45.4550ms
+2024-04-11 10:57:40.2333|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-11 10:57:40.3734|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 140.0063ms
+2024-04-11 10:57:54.6335|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7141/api/fundoo/UserLogin?email=pdshashank8%40gmail.com&password=password%40123 - - 0
+2024-04-11 10:57:54.6444|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.fundooController.userLogin (FundooWebApp)'
+2024-04-11 10:57:54.6709|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] userLogin(System.String, System.String, Microsoft.Extensions.Configuration.IConfiguration) on controller fundoo_application.Controllers.fundooController (FundooWebApp).
+2024-04-11 10:57:54.6882|INFO|Program|Attempting login for user with email: pdshashank8@gmail.com
+2024-04-11 10:57:55.0384|INFO|Program|User login successful for user with email: pdshashank8@gmail.com
+2024-04-11 10:57:55.0689|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2024-04-11 10:57:55.0794|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.fundooController.userLogin (FundooWebApp) in 399.6395ms
+2024-04-11 10:57:55.0794|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.fundooController.userLogin (FundooWebApp)'
+2024-04-11 10:57:55.0794|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7141/api/fundoo/UserLogin?email=pdshashank8%40gmail.com&password=password%40123 - 200 - text/plain;+charset=utf-8 446.9203ms
+2024-04-11 11:51:21.2554|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 11:51:21.6675|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 11:51:21.6675|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 11:51:21.6751|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 11:51:21.6751|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 11:51:21.6751|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\fundoo application\fundoo application
+2024-04-11 11:51:24.4483|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 11:51:26.4577|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 2007.9068ms
+2024-04-11 11:51:26.6998|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 11:51:26.6998|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 11:51:26.7203|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 19.9931ms
+2024-04-11 11:51:26.8983|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 198.0279ms
+2024-04-11 11:51:27.4077|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-11 11:51:28.0270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 619.2341ms
+2024-04-11 11:51:52.5229|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/fundoo/GetAllUsers - - -
+2024-04-11 11:51:52.5665|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.fundooController.Getregdetails (FundooWebApp)'
+2024-04-11 11:51:52.6489|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Getregdetails", controller = "fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getregdetails() on controller fundoo_application.Controllers.fundooController (FundooWebApp).
+2024-04-11 11:51:53.6296|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.Registration, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-11 11:51:53.6691|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.fundooController.Getregdetails (FundooWebApp) in 992.7318ms
+2024-04-11 11:51:53.6691|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.fundooController.Getregdetails (FundooWebApp)'
+2024-04-11 11:51:53.6734|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/fundoo/GetAllUsers - 200 - application/json;+charset=utf-8 1150.2429ms
+2024-04-11 11:54:05.2193|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7141/api/fundoo/ForgotPasswordDetails - application/json 38
+2024-04-11 11:54:05.2345|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.fundooController.ForgotPassword (FundooWebApp)'
+2024-04-11 11:54:05.2792|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ForgotPassword", controller = "fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest) on controller fundoo_application.Controllers.fundooController (FundooWebApp).
+2024-04-11 11:54:11.6689|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2024-04-11 11:54:11.6689|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.fundooController.ForgotPassword (FundooWebApp) in 6391.4388ms
+2024-04-11 11:54:11.6717|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.fundooController.ForgotPassword (FundooWebApp)'
+2024-04-11 11:54:11.6717|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7141/api/fundoo/ForgotPasswordDetails - 200 - text/plain;+charset=utf-8 6453.1186ms
+2024-04-11 11:55:01.7846|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7141/api/fundoo/ResetPassword?email=pdshashank8%40gmail.com&otp=383877&newPassword=Password%40123 - - 0
+2024-04-11 11:55:01.7846|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.fundooController.ResetPassword (FundooWebApp)'
+2024-04-11 11:55:01.8213|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ResetPassword", controller = "fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ResetPassword(System.String, System.String, System.String) on controller fundoo_application.Controllers.fundooController (FundooWebApp).
+2024-04-11 11:55:02.5595|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2024-04-11 11:55:02.5595|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.fundooController.ResetPassword (FundooWebApp) in 737.66ms
+2024-04-11 11:55:02.5595|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.fundooController.ResetPassword (FundooWebApp)'
+2024-04-11 11:55:02.5595|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7141/api/fundoo/ResetPassword?email=pdshashank8%40gmail.com&otp=383877&newPassword=Password%40123 - 200 - text/plain;+charset=utf-8 776.0268ms
+2024-04-11 11:55:34.4801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7141/api/fundoo/UserLogin?email=pdshashank8%40gmail.com&password=Password%40123 - - 0
+2024-04-11 11:55:34.4850|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.fundooController.userLogin (FundooWebApp)'
+2024-04-11 11:55:34.5066|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "userLogin", controller = "fundoo"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] userLogin(System.String, System.String, Microsoft.Extensions.Configuration.IConfiguration) on controller fundoo_application.Controllers.fundooController (FundooWebApp).
+2024-04-11 11:55:34.5217|INFO|Program|Attempting login for user with email: pdshashank8@gmail.com
+2024-04-11 11:55:34.6418|INFO|Program|User login successful for user with email: pdshashank8@gmail.com
+2024-04-11 11:55:34.7139|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.String'.
+2024-04-11 11:55:34.7139|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.fundooController.userLogin (FundooWebApp) in 207.3505ms
+2024-04-11 11:55:34.7139|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.fundooController.userLogin (FundooWebApp)'
+2024-04-11 11:55:34.7139|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7141/api/fundoo/UserLogin?email=pdshashank8%40gmail.com&password=Password%40123 - 200 - text/plain;+charset=utf-8 234.7560ms
+2024-04-11 12:47:01.9987|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 12:47:02.2183|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 12:47:02.2183|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 12:47:02.2205|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 12:47:02.2205|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 12:47:02.2205|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\fundoo application\fundoo application
+2024-04-11 12:47:03.4511|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 12:47:03.8238|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 373.5487ms
+2024-04-11 12:47:03.8846|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 12:47:03.8846|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 12:47:03.8962|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 11.4172ms
+2024-04-11 12:47:03.9945|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 108.8800ms
+2024-04-11 12:47:04.0600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-11 12:47:04.1419|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 81.8608ms
+2024-04-11 14:44:13.8295|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 14:44:14.6063|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 14:44:14.6063|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 14:44:14.6063|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 14:44:14.6063|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 14:44:14.6063|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\fundoo application\fundoo application
+2024-04-11 14:44:15.6067|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 14:44:16.2892|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 683.3802ms
+2024-04-11 14:44:16.3231|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 14:44:16.3231|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 14:44:16.3391|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 15.6199ms
+2024-04-11 14:44:16.3917|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 68.5633ms
+2024-04-11 14:44:16.4975|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-11 14:44:16.6165|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 118.9367ms
+2024-04-11 14:50:21.5098|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 14:50:21.6660|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 14:50:21.6660|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 14:50:21.6660|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 14:50:21.6660|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 14:50:21.6660|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\fundoo application\fundoo application
+2024-04-11 14:50:22.1228|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 14:50:22.3315|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 208.7360ms
+2024-04-11 14:50:22.3810|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 14:50:22.3810|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 14:50:22.3810|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 6.4705ms
+2024-04-11 14:50:22.4090|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 27.9931ms
+2024-04-11 14:50:22.5444|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-11 14:50:22.6266|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 82.2543ms
+2024-04-11 14:53:08.9923|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 14:53:09.1373|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 14:53:09.1373|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 14:53:09.1373|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 14:53:09.1373|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 14:53:09.1373|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\fundoo application\fundoo application
+2024-04-11 14:53:09.7072|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 14:53:09.8843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 176.1098ms
+2024-04-11 14:53:09.9130|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 14:53:09.9130|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 14:53:09.9130|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 5.4627ms
+2024-04-11 14:53:09.9447|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 31.6387ms
+2024-04-11 16:18:48.3820|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 16:18:49.1692|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 16:18:49.1692|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 16:18:49.1744|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 16:18:49.1744|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 16:18:49.1744|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\Downloads\Fundoo_Appln-fundoov2\fundoo application
+2024-04-11 16:18:55.1891|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 16:18:56.7318|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 1562.7765ms
+2024-04-11 16:18:56.9229|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 16:18:56.9463|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 23.4347ms
+2024-04-11 16:18:57.4897|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 16:18:57.6551|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 166.5122ms
+2024-04-11 16:18:58.1408|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-11 16:18:58.4058|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 266.0664ms
+2024-04-11 16:19:18.0763|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/GetByCollabId?userid=1 - - -
+2024-04-11 16:19:18.1023|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-11 16:19:18.1835|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-11 16:19:22.0666|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved 3 label(s) for user with ID 1
+2024-04-11 16:19:22.0885|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-11 16:19:22.1432|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 3947.9663ms
+2024-04-11 16:19:22.1432|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-11 16:19:22.1432|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/GetByCollabId?userid=1 - 200 - application/json;+charset=utf-8 4070.1704ms
