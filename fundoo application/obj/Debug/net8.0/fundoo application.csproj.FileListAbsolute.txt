@@ -14,7 +14,6 @@ C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\n
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\net8.0\fundoo application.AssemblyInfoInputs.cache
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\net8.0\fundoo application.AssemblyInfo.cs
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\net8.0\fundoo application.csproj.CoreCompileInputs.cache
-C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\net8.0\fundoo application.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\net8.0\fundoo application.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\net8.0\fundoo application.sourcelink.json
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\net8.0\staticwebassets.build.json
@@ -38,10 +37,6 @@ C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\n
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\Business.dll
-C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\Repository.dll
-C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\Business.pdb
-C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\Repository.pdb
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -54,3 +49,14 @@ C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\n
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\MailKit.dll
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\MimeKit.dll
 C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\System.Net.Mail.Abstractions.dll
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\BusinessLayer.dll
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\ModelLayer.dll
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\RepositoryLayer.dll
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\BusinessLayer.pdb
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\ModelLayer.pdb
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\RepositoryLayer.pdb
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\NLog.dll
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\obj\Debug\net8.0\fundoo application.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\nlog.config.txt
+C:\Users\SHASHANK\source\repos\fundoo application\fundoo application\bin\Debug\net8.0\NLog.Web.AspNetCore.dll

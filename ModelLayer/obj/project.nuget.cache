@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "COT3VKrDc+gyhY4bEwXZldefgyWDRm8THaKg2cmWPIObRSCy4wgmiNMlb/FZqYtFSZ8BmIaZAJweSd8zczl7+Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SHASHANK\\source\\repos\\fundoo application\\ModelLayer\\ModelLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\nlog\\5.2.8\\nlog.5.2.8.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\nlog.extensions.logging\\5.3.8\\nlog.extensions.logging.5.3.8.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.8\\nlog.web.aspnetcore.5.3.8.nupkg.sha512"
+  ],
+  "logs": []
+}
