@@ -166,3 +166,17 @@
 2024-04-11 16:19:22.1432|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 3947.9663ms
 2024-04-11 16:19:22.1432|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
 2024-04-11 16:19:22.1432|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/GetByCollabId?userid=1 - 200 - application/json;+charset=utf-8 4070.1704ms
+2024-04-11 16:44:06.7048|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-11 16:44:07.0683|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-11 16:44:07.0683|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-11 16:44:07.0683|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-11 16:44:07.0683|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-11 16:44:07.0683|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-11 16:44:07.7138|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-11 16:44:08.1931|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 478.4391ms
+2024-04-11 16:44:08.2113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-11 16:44:08.2113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-11 16:44:08.2113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 5.2783ms
+2024-04-11 16:44:08.2831|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 71.7666ms
+2024-04-11 16:44:08.4440|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-11 16:44:08.6174|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 173.3414ms
