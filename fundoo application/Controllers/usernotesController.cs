@@ -1,7 +1,8 @@
 ﻿using Business.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Repository.Entity;
+using ModelLayer.Entity;
+
 
 namespace fundoo_application.Controllers
 {
@@ -9,9 +10,9 @@ namespace fundoo_application.Controllers
     [ApiController]
     public class usernotesController : ControllerBase
     {
-        private readonly Iusernotes_bl Iusernotes_bl;
+        private readonly IUsernotesBusiness Iusernotes_bl;
 
-        public usernotesController(Iusernotes_bl Iusernotes_bl)
+        public usernotesController(IUsernotesBusiness Iusernotes_bl)
         {
             this.Iusernotes_bl = Iusernotes_bl;
         }
@@ -31,7 +32,7 @@ namespace fundoo_application.Controllers
             }
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{NoteId}")]
         public async Task<IActionResult> GetNotesById(int id)
         {
             try
@@ -46,7 +47,7 @@ namespace fundoo_application.Controllers
             }
         }
 
-        [HttpDelete ("DeletenotesbyUserId")]
+        [HttpDelete ("{UserId}")]
         public async Task<IActionResult> DeletenotesbyId(int userid)
         {
             try
@@ -61,7 +62,7 @@ namespace fundoo_application.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPut("{NotesId}")]
         public async Task<IActionResult> EditbynoteId(int Noteid, usernotes note)
         {
             try

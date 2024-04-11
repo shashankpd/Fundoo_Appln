@@ -2,7 +2,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Repository.Entity;
+using ModelLayer.Entity;
+
 
 namespace fundoo_application.Controllers
 {
@@ -10,16 +11,16 @@ namespace fundoo_application.Controllers
     [ApiController]
     public class CollaboratorController : ControllerBase
     {
-        private readonly Icollaborator_bl Icollaborator_bl;
+        private readonly ICollaboratorBusiness Icollaborator_bl;
 
-        public CollaboratorController(Icollaborator_bl Icollaborator_bl)
+        public CollaboratorController(ICollaboratorBusiness Icollaborator_bl)
         {
             this.Icollaborator_bl = Icollaborator_bl;
         }
 
         //start
 
-        [HttpPost]
+        [HttpPost("AddCollaborator")]
         public async Task<IActionResult> Addcollaborator(Collabarator collab)
         {
             try
@@ -34,7 +35,7 @@ namespace fundoo_application.Controllers
             }
         }
 
-        [HttpGet("{collabid}")]
+        [HttpGet("GetByCollabId")]
         [Authorize]
         public async Task<IActionResult> Getbycollabid(int collabid)
         {
@@ -50,7 +51,7 @@ namespace fundoo_application.Controllers
             }
         }
 
-        [HttpDelete("Deletebycollabid")]
+        [HttpDelete("DeleteByCollabId")]
         public async Task<IActionResult> Deletebycollabid(int colid)
         {
             try

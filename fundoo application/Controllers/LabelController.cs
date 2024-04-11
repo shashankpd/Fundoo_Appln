@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Repository.Entity;
+using ModelLayer.Entity;
 
 namespace fundoo_application.Controllers
 {
@@ -10,16 +10,16 @@ namespace fundoo_application.Controllers
     [ApiController]
     public class LabelController : ControllerBase
     {
-        private readonly Ilabel_bl Ilabel_bl;
+        private readonly ILabelBusiness Ilabel_bl;
 
-        public LabelController(Ilabel_bl Ilabel_bl)
+        public LabelController(ILabelBusiness Ilabel_bl)
         {
             this.Ilabel_bl = Ilabel_bl;
         }
 
         //start
 
-        [HttpPost]
+        [HttpPost("AddLabel")]
         public async Task<IActionResult> Addlabel(label labl)
         {
             try
@@ -35,7 +35,7 @@ namespace fundoo_application.Controllers
       
         }
 
-        [HttpPut("editlabel")]
+        [HttpPut("EditLabel")]
         public async Task<IActionResult> EditbyLabelId(int labelid, label labl)
         {
             try
@@ -65,7 +65,7 @@ namespace fundoo_application.Controllers
             }
         }
 
-        [HttpGet("collabid")]
+        [HttpGet("GetByCollabId")]
         public async Task<IActionResult> GetbylabelIdAndNotesId(int userid)
         {
             try

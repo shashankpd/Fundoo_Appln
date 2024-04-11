@@ -3,30 +3,43 @@ using Business.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using NLog.Extensions.Logging;
+using NLog.Web;
 using Repository.Context;
 using Repository.Interface;
 using Repository.Service;
 using System.Text;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddScoped<DapperContext>();
-builder.Services.AddScoped<Iregistration_bl, RegistrationService_bl>();
-builder.Services.AddScoped<Iregistration, RegistrationService>();
+builder.Services.AddScoped<IRegistrationBusiness, RegistrationServiceBusinessLogic>();
+builder.Services.AddScoped<IRegistrationRepository, RegistrationServiceRepoLogic>();
 builder.Services.AddControllers();
 
 //for usernotes
-builder.Services.AddScoped<Iusernotes_bl, usernotesService_bl>();
-builder.Services.AddScoped<Iusernotes, usernotesService>();
+builder.Services.AddScoped<IUsernotesBusiness, UserNotesServiceBusinessLogic>();
+builder.Services.AddScoped<IUserNotesRepository, usernotesServiceRepoLogic>();
 
 //for labels
-builder.Services.AddScoped<Ilabel_bl, LabelService_bl>();
-builder.Services.AddScoped<Ilabel, LabelService>();
+builder.Services.AddScoped<ILabelBusiness, LabelServiceBusinessLogic>();
+builder.Services.AddScoped<ILabelRepository, LabelServiceRepoLogic>();
+
+//for logger in labels
+// Configure Serilog for logging
+// Add NLog Logger
+var logpath = Path.Combine(Directory.GetCurrentDirectory(), "Logs");
+NLog.GlobalDiagnosticsContext.Set("LogDirectory", logpath);
+builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+builder.Host.UseNLog();
+builder.Services.AddSingleton<NLog.ILogger>(NLog.LogManager.GetCurrentClassLogger());
 
 //for collaborator
-builder.Services.AddScoped<Icollaborator_bl, CollaboratorService_bl>();
-builder.Services.AddScoped<Icollaborator, CollaboratorService>();
+builder.Services.AddScoped<ICollaboratorBusiness, CollaboratorServiceBusinessLogic>();
+builder.Services.AddScoped<IcollaboratorRepository, CollaboratorServiceRepoLogic>();
 
 //code for authentication and authorisation
 
@@ -53,7 +66,7 @@ builder.Services.AddSwaggerGen(c =>
 
     c.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, securityScheme);
 
-    // Require JWT tokens to be passed on requests
+    // Require JWT tokens to be passed on requests 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
@@ -102,6 +115,8 @@ builder.Services.AddAuthentication(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -117,5 +132,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();
