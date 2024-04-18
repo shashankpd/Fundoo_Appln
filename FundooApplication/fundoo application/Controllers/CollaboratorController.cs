@@ -3,12 +3,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
+using ModelLayer.Response;
+using System.Data.SqlClient;
 
 
 namespace fundoo_application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class CollaboratorController : ControllerBase
     {
         private readonly ICollaboratorBusiness Icollaborator_bl;
@@ -20,51 +23,158 @@ namespace fundoo_application.Controllers
 
         //start
 
-        [HttpPost("AddCollaborator")]
+        [HttpPost]
+        [Authorize] 
         public async Task<IActionResult> Addcollaborator(Collabarator collab)
         {
             try
             {
-                var details = await Icollaborator_bl.Addcollaborator(collab);
-                return Ok(details);
+                // Get the UserId of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(500, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int if necessary
+                int userId = int.Parse(userIdClaim.Value);
+
+                // Proceed with adding collaborator using the authenticated UserId
+                var details = await Icollaborator_bl.Addcollaborator(collab, userId);
+
+                var response = new ResponseModel<int>
+                {
+                    Message = "Collaborator Created Successfully",
+                    Data = details
+                };
+
+                return Ok(response);
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                var response = new ResponseModel<IEnumerable<Collabarator>>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                };
+                return Ok(response);
             }
         }
 
-        [HttpGet("GetByCollabId")]
-        [Authorize]
+
+        [HttpGet("{collabid}")]
+        [Authorize] // Authorize the action
         public async Task<IActionResult> Getbycollabid(int collabid)
         {
             try
             {
-                var details = await Icollaborator_bl.Getbycollabid(collabid);
-                return Ok(details);
+                // Get the UserId of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(500, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int if necessary
+                int userId = int.Parse(userIdClaim.Value);
+
+                // Proceed with retrieving collaborators using the authenticated UserId
+                var details = await Icollaborator_bl.Getbycollabid(collabid, userId);
+
+                return Ok(new ResponseModel<IEnumerable<Collabarator>>
+                {
+                    Message = details != null ? "Collaborator retrieved successfully" : "No Collaborator found",
+                    Data = details
+                });
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                if (ex is SqlException)
+                {
+                    return StatusCode(500, new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred while retrieving Collaborator from the database.",
+                        Data = null
+                    });
+                }
+                else
+                {
+                    return StatusCode(500, new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred.",
+                        Data = null
+                    });
+                }
             }
         }
 
-        [HttpDelete("DeleteByCollabId")]
-        public async Task<IActionResult> Deletebycollabid(int colid)
+
+        [HttpDelete("{CollabId}")]
+        [Authorize] // Authorize the action
+        public async Task<IActionResult> Deletebycollabid(int CollabId)
         {
             try
             {
-                var details = await Icollaborator_bl.Deletebycollabid(colid);
-                return Ok(details);
+                // Get the UserId of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(500, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int if necessary
+                int userId = int.Parse(userIdClaim.Value);
+
+                // Proceed with deleting collaborator using the authenticated UserId
+                var details = await Icollaborator_bl.Deletebycollabid(CollabId, userId);
+
+                if (details > 0)
+                {
+                    return Ok(new ResponseModel<string>
+                    {
+                        Message = "Collaborator deleted successfully",
+                        Data = null,
+                    });
+                }
+                else
+                {
+                    return NotFound(new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "Collaborator not found",
+                        Data = null
+                    });
+                }
+            }
+            catch (DatabaseException ex)
+            {
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                });
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = $"An error occurred: {ex.Message}",
+                    Data = null
+                });
             }
         }
+
 
 
     }

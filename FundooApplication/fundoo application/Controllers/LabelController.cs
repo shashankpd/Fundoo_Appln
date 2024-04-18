@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
+using ModelLayer.Response;
+using System.Data.SqlClient;
 
 namespace fundoo_application.Controllers
 {
@@ -19,66 +22,227 @@ namespace fundoo_application.Controllers
 
         //start
 
-        [HttpPost("AddLabel")]
-        public async Task<IActionResult> Addlabel(label labl)
+        [HttpPost]
+        [Authorize] // Authorize the action
+        public async Task<IActionResult> Addlabel(LabelBody labl)
         {
             try
             {
-                var details = await Ilabel_bl. Addlabel( labl);
-                return Ok(details);
+                // Get the UserId of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(500, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int if necessary
+                int userId = int.Parse(userIdClaim.Value);
+
+                // Proceed with adding label using the authenticated UserId
+                var details = await Ilabel_bl.Addlabel(labl, userId);
+
+                var response = new ResponseModel<int>
+                {
+                    Message = "Label Created Successfully",
+                    Data = details
+                };
+
+                return Ok(response);
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                var response = new ResponseModel<IEnumerable<label>>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                };
+                return Ok(response);
             }
-      
         }
 
-        [HttpPut("EditLabel")]
-        public async Task<IActionResult> EditbyLabelId(int labelid, label labl)
+
+        [HttpPut("{labelid}")]
+        [Authorize] // Authorize the action
+        public async Task<IActionResult> EditbyLabelId(int labelid, LabelBody labl)
         {
             try
             {
-                var details = await Ilabel_bl.EditbyLabelId(labelid,  labl);
-                return Ok(details);
+                // Get the UserId of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(500, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int if necessary
+                int userId = int.Parse(userIdClaim.Value);
+                Console.WriteLine(userId);
+
+                // Proceed with editing label using the authenticated UserId
+                var details = await Ilabel_bl.EditbyLabelId(labelid, labl, userId);
+                var response = new ResponseModel<int>
+                {
+                    Message = "Label updated successfully",
+                    Data = details
+                };
+
+                return Ok(response);
+            }
+            catch (NotFoundException ex)
+            {
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+                return NotFound(response);
+            }
+            catch (DatabaseException ex)
+            {
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+                return StatusCode(500, response);
+            }
+            catch (RepositoryException ex)
+            {
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+                return StatusCode(500, response);
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "An unexpected error occurred: " + ex.Message
+                };
+                return StatusCode(500, response);
             }
         }
 
-        [HttpDelete("DeleteByLabelId")]
-        public async Task<IActionResult> DeletebyLabelId(int lblid)
+
+        [HttpDelete("{LabelId}")]
+        [Authorize] // Authorize the action
+        public async Task<IActionResult> DeletebyLabelId(int LabelId)
         {
             try
             {
-                var details = await Ilabel_bl.DeletebyLabelId(lblid);
-                return Ok(details);
+                // Get the UserId of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(500, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int if necessary
+                int userId = int.Parse(userIdClaim.Value);
+
+                // Proceed with deleting label using the authenticated UserId
+                var details = await Ilabel_bl.DeletebyLabelId(LabelId, userId);
+
+                if (details > 0)
+                {
+                    return Ok(new ResponseModel<string>
+                    {
+                        Message = "Label deleted successfully",
+                        Data = null,
+                    });
+                }
+                else
+                {
+                    return NotFound(new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "Label not found",
+                        Data = null
+                    });
+                }
+            }
+            catch (DatabaseException ex)
+            {
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                });
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = $"An error occurred: {ex.Message}",
+                    Data = null
+                });
             }
         }
 
-        [HttpGet("GetByCollabId")]
+
+        [HttpGet("{userid}")]
+        [Authorize] // Authorize the action
         public async Task<IActionResult> GetbylabelIdAndNotesId(int userid)
         {
             try
             {
-                var details = await Ilabel_bl.GetbylabelIdAndNotesId(userid);
-                return Ok(details);
+                // Get the UserId of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(500, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int
+                int userId = int.Parse(userIdClaim.Value);
+
+                // Proceed with retrieving labels using the authenticated UserId
+                var details = await Ilabel_bl.GetbylabelIdAndNotesId(userId);
+
+                return Ok(new ResponseModel<object>
+                {
+                    Message = details != null ? "Label retrieved successfully" : "No Label found",
+                    Data = details
+                }) ;
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                if (ex is SqlException)
+                {
+                    return StatusCode(500, new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred while retrieving Label from the database.",
+                        Data = null
+                    });
+                }
+                else
+                {
+                    return StatusCode(500, new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred.",
+                        Data = null
+                    });
+                }
             }
         }
+
+
 
 
 

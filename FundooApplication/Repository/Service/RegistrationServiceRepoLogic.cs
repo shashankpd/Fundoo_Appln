@@ -84,10 +84,9 @@ namespace Repository.Service
                 throw;
             }
         }
-
+        // Hash the password using a secure hashing algorithm like SHA256
         private string HashPassword(string password)
         {
-            // Hash the password using a secure hashing algorithm like SHA256
             using (var sha256 = SHA256.Create())
             {
                 byte[] hashedBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
@@ -95,25 +94,23 @@ namespace Repository.Service
             }
         }
 
-
-
-
-        public async Task<int> Deleteusers(string email)
+        public async Task<int> Deleteusers(int userid)
         {
-            var query = $"Delete from register where emailId={email}";
+            var query = "DELETE FROM register WHERE userid = @userid";
             using (var connection = _context.CreateConnection())
             {
-                var user = await connection.ExecuteAsync(query, email);
-                return user;
+                var affectedRows = await connection.ExecuteAsync(query, new { userid });
+                return affectedRows;
             }
         }
 
-        public async Task<int> updateuser(string email, Registration reg)
+
+        public async Task<int> updateuser(int userid, Registration reg)
         {
-            var query = $"update register set firstName=@FirstName,lastName=@lastName,emailId=@emailId,password=@password where emailId=@Email";
+            var query = $"update register set firstName=@FirstName,lastName=@lastName,emailId=@emailId,password=@password where userid=@UserId";
             using (var connection = _context.CreateConnection())
             {
-                var user = await connection.ExecuteAsync(query,new { FirstName=reg.firstName,lastname=reg.lastName,emailId=reg.emailId,Password=reg.password,Email=email});
+                var user = await connection.ExecuteAsync(query,new { FirstName=reg.firstName,lastname=reg.lastName,emailId=reg.emailId,Password=reg.password, UserId = userid});
                 return user;
             }
         }
@@ -158,8 +155,8 @@ namespace Repository.Service
             }
         }
 
-        // Modify the GenerateJwtToken method to accept IConfiguration as a parameter
-       
+
+        // Generating JWT Tokens    
         private string GenerateJwtToken(Registration user, IConfiguration configuration)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -172,6 +169,7 @@ namespace Repository.Service
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                 new Claim(ClaimTypes.NameIdentifier, user.emailId),
+                new Claim("UserId", user.userid.ToString())
                     // Add more claims as needed
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
@@ -183,27 +181,7 @@ namespace Repository.Service
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
-        // code for forgot and reset password
-
-        /*public async Task ForgotPassword(string email)
-        {
-
-            var user = await GetUserByEmail(email);
-            if (user != null)
-            {
-                var Otp = GenerateOneTimePassword();
-                // Store the token along with the user's email in your database or cache
-                // Send an email to the user with a link containing the token for password reset
-                RegistrationServiceRepoLogic.Otp= Otp;
-                RegistrationServiceRepoLogic.Email = email;
-                SendPasswordResetEmail(email, Otp);
-            }
-            else
-            {
-                // Handle case where email does not exist in the database
-                throw new ArgumentException("User with provided email does not exist.");
-            }
-        }*/
+        
 
         public async Task<Registration> GetUserByEmail(string email)
         {
@@ -213,61 +191,6 @@ namespace Repository.Service
                 return await connection.QueryFirstOrDefaultAsync<Registration>(query, new { Email = email });
             }
         }
-
-
-        /* private string GenerateOneTimePassword()
-         {
-             // Generate a random six-digit OTP
-             Random random = new Random();
-             int otp = random.Next(100000, 999999);
-
-             return otp.ToString();
-         }*/
-
-
-
-
-
-        /* public async Task SendPasswordResetEmail(string email, string Otp)
-         {
-             System.Net.Mail.MailMessage mailMessage = new System.Net.Mail.MailMessage();
-             try
-             {
-                 mailMessage.From = new System.Net.Mail.MailAddress("pdshashank8@outlook.com", "FUNDOO NOTES");
-                 mailMessage.To.Add(email);
-                 mailMessage.Subject = "Change password for Fundoo Notes";
-                 mailMessage.Body = "This is your otp please enter to change password " + Otp;
-                 mailMessage.IsBodyHtml = true;
-                 System.Net.Mail.SmtpClient smtpClient = new System.Net.Mail.SmtpClient("smtp-mail.outlook.com");
-
-                 // Specifies how email messages are delivered. Here Email is sent through the network to an SMTP server.
-                 smtpClient.DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network;
-
-                 // Set the port for Outlook's SMTP server
-                 smtpClient.Port = 587; // Outlook SMTP port for TLS/STARTTLS
-
-                 // Enable SSL/TLS
-                 smtpClient.EnableSsl = true;
-
-                 string loginName = "pdshashank8@outlook.com";
-                 string loginPassword = "PDshashank@123";
-
-                 System.Net.NetworkCredential networkCredential = new System.Net.NetworkCredential(loginName, loginPassword);
-                 smtpClient.UseDefaultCredentials = false;
-                 smtpClient.Credentials = networkCredential;
-
-                 smtpClient.Send(mailMessage);
-             }
-             catch (Exception ex)
-             {
-                 Console.WriteLine("Exception caught: " + ex.Message);
-             }
-             finally
-             {
-                 mailMessage.Dispose();
-             }
-         }*/
-
 
         public async Task ResetPassword(string email, string otp, string newPassword)
         {

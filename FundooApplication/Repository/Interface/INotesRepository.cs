@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace Repository.Interface
 {
-    public interface IUserNotesRepository
+    public interface INotesRepository
     {
-        public Task<int> Addnotes(usernotes notes);
+        public Task<int> Addnotes(int userid, Notes notes);
 
-        public Task<usernotes> GetNotesById(int id);
+        public Task<IEnumerable<Notes>> GetNotesById(int UserId);
 
         public Task<int> DeletenotesbyId(int userid);
 
-        public Task<int> EditbynoteId(int Noteid, usernotes note);
+        public Task<int> EditbynoteId(int userid,int Noteid, Notes note);
     }
 }

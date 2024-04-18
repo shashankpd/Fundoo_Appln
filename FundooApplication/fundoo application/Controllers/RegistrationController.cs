@@ -1,10 +1,15 @@
 ﻿using Business.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
+using ModelLayer.Response;
+using Newtonsoft.Json.Linq;
+using Org.BouncyCastle.Utilities;
 using Repository.Service;
 using System.Data.SqlClient;
+using System.Security.Claims;
 
 
 
@@ -28,12 +33,32 @@ namespace fundoo_application.Controllers
             try
             {
                 var details = await Iregistration_bl.Getregdetails();
-                return Ok(details);
+                return Ok(new ResponseModel<IEnumerable<Registration>>
+                {
+                    Message = details != null && details.Any() ? "Users retrieved successfully" : "No Users found",
+                    Data = details
+                });
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                if (ex is SqlException)
+                {
+                    return StatusCode(500, new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred while retrieving Users from the database.",
+                        Data = null
+                    });
+                }
+                else
+                {
+                    return StatusCode(500, new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred.",
+                        Data = null
+                    });
+                }
             }
         }
 
@@ -44,71 +69,266 @@ namespace fundoo_application.Controllers
             try
             {
                 var details = await Iregistration_bl.Addusers(users);
-                return Ok(details);
+                if (details>0)
+                {
+                    var response = new ResponseModel<Registration>
+                    {
+                        Success = true,
+                        Message = "User Registration Successful"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+
+                    return BadRequest("invalid input");
+                }
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                if (ex is DuplicateEmailException)
+                {
+                    var response = new ResponseModel<Registration>
+                    {
+                        Success = false,
+                        Message = ex.Message
+                    };
+                    return BadRequest(response);
+
+
+                }
+                else if (ex is InvalidEmailFormatException)
+                {
+                    var response = new ResponseModel<Registration>
+                    {
+                        Success = false,
+                        Message = ex.Message
+                    };
+                    return BadRequest(response);
+
+                }
+                else
+                {
+                    return StatusCode(500, $"An error occurred while adding the user: {ex.Message}");
+                }
             }
         }
 
-        [HttpDelete("{Email}")]
-        public async Task<IActionResult> Deleteusers(string email)
+        [Authorize]
+        [HttpDelete]
+        public async Task<IActionResult> Deleteusers()
         {
             try
             {
-                var details = await Iregistration_bl.Deleteusers(email);
-                return Ok(details);
+                // Get the userid of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(401, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int if necessary
+                int authenticatedUserId = int.Parse(userIdClaim.Value);
+
+                // Proceed with deleting the user account
+                var details = await Iregistration_bl.Deleteusers(authenticatedUserId);
+                if (details > 0)
+                {
+                    return Ok(new ResponseModel<string>
+                    {
+
+                        Message = "User deleted  successfully",
+                        Data = null,
+
+                    });
+                }
+                else
+                {
+                    return NotFound(new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "User not found",
+                        Data = null
+                    });
+                }
+            }
+            catch (DatabaseException ex)
+            {
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                });
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                return StatusCode(500, new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = $"An error occurred: {ex.Message}",
+                    Data = null
+                });
             }
         }
 
-        [HttpPut("{Mail}")]
-        public async Task<IActionResult> updateuser(string emial, Registration reg)
+
+
+
+        [Authorize]
+        [HttpPut]
+        public async Task<IActionResult> updateuser(Registration reg)
         {
             try
             {
-                var details = await Iregistration_bl.updateuser(emial,reg);
-                return Ok(details);
+                // Get the userid of the authenticated user from the claims in the JWT token
+                var userIdClaim = User.FindFirst("UserId");
+
+                if (userIdClaim == null)
+                {
+                    // Handle case where UserId claim is missing
+                    return StatusCode(401, "UserId claim is missing in the token.");
+                }
+
+                // Convert authenticated UserId to int
+                int authenticatedUserId = int.Parse(userIdClaim.Value);
+
+                // Call the business logic layer to update the user's information
+                var details = await Iregistration_bl.updateuser(authenticatedUserId, reg);
+
+                var response = new ResponseModel<int>
+                {
+
+                    Message = "user updated successfully",
+                    Data = details
+
+                };
+
+                return Ok(response);
+            }
+            catch (NotFoundException ex)
+            {
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+                return NotFound(response);
+            }
+            catch (DatabaseException ex)
+            {
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+                return StatusCode(500, response);
+            }
+            catch (RepositoryException ex)
+            {
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message
+                };
+                return StatusCode(500, response);
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                var response = new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "An unexpected error occurred: " + ex.Message
+                };
+                return StatusCode(500, response);
             }
         }
+
+
         [HttpPost("Login")]
         public async Task<IActionResult> userLogin(string email, string password, IConfiguration configuration)
         {
             try
             {
                 var details = await Iregistration_bl.userLogin(email, password, configuration);
-                return Ok(details);
+                var response = new ResponseModel<string>
+                {
+
+                    Message = "Login Sucessfull",
+                    Data = details
+
+                };
+                return Ok(response);
+
             }
             catch (Exception ex)
             {
-                // Log error
-                return StatusCode(500, ex.Message);
+                if (ex is NotFoundException)
+                {
+                    var response = new ResponseModel<Registration>
+                    {
+
+                        Success = false,
+                        Message = ex.Message
+
+                    };
+                    return Conflict(response);
+                }
+                else if (ex is InvalidPasswordException)
+                {
+                    var response = new ResponseModel<Registration>
+                    {
+
+                        Success = false,
+                        Message = ex.Message
+
+                    };
+                    return BadRequest(response);
+                }
+                else
+                {
+                    return StatusCode(500, $"An error occurred while processing the login request: {ex.Message}");
+
+                }
             }
         }
 
-        [HttpGet("{Mail}")]
+        [HttpGet("{email}")]
         public async Task<IActionResult> GetUserByEmail(string email)
         {
             try
             {
                 var details = await Iregistration_bl.GetUserByEmail(email);
-                return Ok(details);
+
+                return Ok(new ResponseModel<IEnumerable<Registration>>
+                {
+                    Message = details != null ? "User retrieved successfully" : "No User found",
+                    Data = (IEnumerable<Registration>)details
+                });
+
             }
             catch (Exception ex)
             {
-                //log error
-                return StatusCode(500, ex.Message);
+                if (ex is SqlException)
+                {
+                    return StatusCode(500, new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred while retrieving user from the database.",
+                        Data = null
+                    });
+                }
+                else
+                {
+                    return StatusCode(500, new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred.",
+                        Data = null
+                    });
+                }
             }
         }
 

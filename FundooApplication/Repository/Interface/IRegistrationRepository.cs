@@ -13,9 +13,9 @@ namespace Repository.Interface
         public Task<IEnumerable<Registration>> Getregdetails();
         public Task<int> Addusers(Registration users);
 
-        public Task<int> Deleteusers(string email);
+        public Task<int> Deleteusers(int userid);
 
-        public Task<int> updateuser(string email, Registration reg);
+        public Task<int> updateuser(int userid, Registration reg);
 
         public Task<string> userLogin(string email, string password, IConfiguration configuration);
 

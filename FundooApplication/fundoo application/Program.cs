@@ -1,6 +1,7 @@
 using Business.Interface;
 using Business.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using NLog.Extensions.Logging;
@@ -8,7 +9,10 @@ using NLog.Web;
 using Repository.Context;
 using Repository.Interface;
 using Repository.Service;
+using StackExchange.Redis;
 using System.Text;
+using Microsoft.Extensions.Configuration;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,8 +24,8 @@ builder.Services.AddScoped<IRegistrationRepository, RegistrationServiceRepoLogic
 builder.Services.AddControllers();
 
 //for usernotes
-builder.Services.AddScoped<IUsernotesBusiness, UserNotesServiceBusinessLogic>();
-builder.Services.AddScoped<IUserNotesRepository, usernotesServiceRepoLogic>();
+builder.Services.AddScoped<INotesBusiness, NotesServiceBusinessLogic>();
+builder.Services.AddScoped<INotesRepository, NotesServiceRepoLogic>();
 
 //for labels
 builder.Services.AddScoped<ILabelBusiness, LabelServiceBusinessLogic>();
@@ -37,16 +41,27 @@ builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
 builder.Host.UseNLog();
 builder.Services.AddSingleton<NLog.ILogger>(NLog.LogManager.GetCurrentClassLogger());
 
+
 //for collaborator
 builder.Services.AddScoped<ICollaboratorBusiness, CollaboratorServiceBusinessLogic>();
 builder.Services.AddScoped<IcollaboratorRepository, CollaboratorServiceRepoLogic>();
+
+//config for Redis
+builder.Services.AddSingleton<ConnectionMultiplexer>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>(); // Retrieve the IConfiguration object
+    var redisConnectionString = configuration.GetConnectionString("Redis");
+    return ConnectionMultiplexer.Connect(redisConnectionString);
+});
+
+
 
 //code for authentication and authorisation
 
 //strt
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Get USerNotes based on ID", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Fundoo API's", Version = "v1" });
 
     // Define the JWT bearer scheme
     var securityScheme = new OpenApiSecurityScheme
@@ -82,7 +97,7 @@ builder.Services.AddDistributedMemoryCache();
 // Add JWT authentication
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]));
-//var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]));
+
 
 builder.Services.AddAuthentication(options =>
 {

@@ -13,10 +13,10 @@ namespace Repository.Interface
     {
         //start
 
-        public Task<int> Addcollaborator(Collabarator collab);
+        public Task<int> Addcollaborator(Collabarator collab,int userid);
 
-        public Task<object> Getbycollabid(int collabid);
+        public Task<IEnumerable<Collabarator>> Getbycollabid(int collabid,int userid);
 
-        public Task<int> Deletebycollabid(int colid);
+        public Task<int> Deletebycollabid(int colid,int userid);
     }
 }

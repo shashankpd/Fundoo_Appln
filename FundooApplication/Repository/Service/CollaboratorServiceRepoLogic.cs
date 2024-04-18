@@ -21,9 +21,9 @@ namespace Repository.Service
         {
             _context = context;
         }
-        //start
 
-        public async Task<int> Addcollaborator(Collabarator collab)
+        //start
+        public async Task<int> Addcollaborator(Collabarator collab, int userid)
         {
             var query = @"
         INSERT INTO collabarator (NoteId, userid, collabEmail)
@@ -65,29 +65,25 @@ namespace Repository.Service
             await smtpClient.SendMailAsync(mailMessage);
         }
 
-        public async Task<object> Getbycollabid(int collabid)
+        public async Task<IEnumerable<Collabarator>> Getbycollabid(int collabId, int Userid)
         {
-            var query = @"
-        SELECT c.*, n.* 
-        FROM collabarator c 
-        INNER JOIN Notes n ON c.NoteId = n.NoteId 
-        WHERE c.collabid = @collabid";
+            var query = "SELECT * FROM collabarator WHERE collabid = @collabid and userid=@userid";
 
             using (var connection = _context.CreateConnection())
             {
-                var result = await connection.QueryAsync(query, new { collabid });
+                var result = await connection.QueryAsync<Collabarator>(query, new { collabid= collabId , userid = Userid });
 
                 // Return the dynamic result
                 return result;
             }
         }
 
-        public async Task<int> Deletebycollabid(int colid)
+        public async Task<int> Deletebycollabid(int collabid, int userid)
         {
-            var query = $"Delete from collabarator where collabid={colid}";
+            var query = $"Delete from collabarator where collabid={collabid}";
             using (var connection = _context.CreateConnection())
             {
-                var user = await connection.ExecuteAsync(query, colid);
+                var user = await connection.ExecuteAsync(query, collabid);
                 return user;
             }
         }

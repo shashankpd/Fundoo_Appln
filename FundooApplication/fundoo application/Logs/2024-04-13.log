@@ -1,0 +1,437 @@
+2024-04-13 11:38:06.1929|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:38:07.0827|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-13 11:38:07.0827|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-13 11:38:07.0827|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-13 11:38:07.0827|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-13 11:38:07.0827|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-13 11:38:11.1551|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger - - -
+2024-04-13 11:38:11.8516|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger - 301 0 - 696.0505ms
+2024-04-13 11:38:12.0530|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 11:38:12.2525|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 199.3203ms
+2024-04-13 11:38:12.5116|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/swagger-ui.css - - -
+2024-04-13 11:38:12.5380|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-13 11:38:12.5380|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/swagger-ui.css - 200 143943 text/css 26.9562ms
+2024-04-13 11:38:12.6356|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/swagger-ui-bundle.js - - -
+2024-04-13 11:38:12.6356|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/swagger-ui-standalone-preset.js - - -
+2024-04-13 11:38:12.6532|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-13 11:38:12.6532|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 17.7999ms
+2024-04-13 11:38:12.6630|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 11:38:12.6748|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 11:38:12.6748|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 12.6725ms
+2024-04-13 11:38:12.7040|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-13 11:38:12.7040|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 68.7678ms
+2024-04-13 11:38:12.7732|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 98.3214ms
+2024-04-13 11:38:13.3629|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 11:38:13.5660|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 202.9315ms
+2024-04-13 11:52:03.0396|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 11:52:03.1113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 71.6503ms
+2024-04-13 11:52:03.1937|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 11:52:03.1937|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 11:52:03.1937|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 5.7120ms
+2024-04-13 11:52:03.2253|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 30.1654ms
+2024-04-13 11:52:03.6106|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 11:52:03.6214|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 11.0700ms
+2024-04-13 11:52:17.0332|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 11:52:17.0396|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 11:52:17.0629|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 11:52:19.0541|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved 3 label(s) for user with ID 1
+2024-04-13 11:52:19.0541|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 11:52:19.0923|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 2020.4098ms
+2024-04-13 11:52:19.0923|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 11:52:19.0923|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 2060.3478ms
+2024-04-13 11:54:48.5940|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:54:48.7461|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-13 11:54:48.7461|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-13 11:54:48.7461|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-13 11:54:48.7461|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-13 11:54:48.7461|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-13 11:54:49.3759|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 11:54:49.8692|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 491.8687ms
+2024-04-13 11:54:49.9121|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 11:54:49.9121|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 11:54:49.9121|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 5.3633ms
+2024-04-13 11:54:49.9543|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 42.0315ms
+2024-04-13 11:54:50.0405|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 11:54:50.2438|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 203.2096ms
+2024-04-13 11:55:20.0135|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 11:55:20.0269|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 11:55:20.0474|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 11:55:20.3513|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved 3 label(s) for user with ID 1
+2024-04-13 11:55:20.3513|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 11:55:20.4081|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 347.9896ms
+2024-04-13 11:55:20.4093|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 11:55:20.4093|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 397.3103ms
+2024-04-13 11:57:02.1842|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 11:57:02.3414|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-13 11:57:02.3414|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-13 11:57:02.3414|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-13 11:57:02.3414|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-13 11:57:02.3414|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-13 11:57:03.1259|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 11:57:03.5149|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 395.5169ms
+2024-04-13 11:57:03.5407|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 11:57:03.5407|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 11:57:03.5407|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 4.9011ms
+2024-04-13 11:57:03.5963|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 55.6571ms
+2024-04-13 11:57:03.6936|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 11:57:03.8640|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 170.3768ms
+2024-04-13 11:57:16.3825|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 11:57:16.3932|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 11:57:16.4365|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 11:57:16.7725|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved 3 label(s) for user with ID 1
+2024-04-13 11:57:16.7847|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 11:57:16.8344|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 383.413ms
+2024-04-13 11:57:16.8344|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 11:57:16.8344|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 453.3594ms
+2024-04-13 11:59:40.2568|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 11:59:40.3430|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 87.1131ms
+2024-04-13 11:59:40.3811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 11:59:40.3811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 11:59:40.3811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 2.7476ms
+2024-04-13 11:59:40.5164|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 134.6658ms
+2024-04-13 11:59:40.6971|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 11:59:40.7200|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 22.8854ms
+2024-04-13 11:59:56.8595|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 11:59:56.8618|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 11:59:56.8618|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 11:59:56.8786|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved 3 label(s) for user with ID 1
+2024-04-13 11:59:56.8786|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 11:59:56.8786|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 17.675ms
+2024-04-13 11:59:56.8786|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 11:59:56.8786|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 20.8510ms
+2024-04-13 12:00:13.4019|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1%0A - - -
+2024-04-13 12:00:13.4019|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 12:00:13.4019|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 12:00:13.4111|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved 3 label(s) for user with ID 1
+2024-04-13 12:00:13.4111|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Object, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-04-13 12:00:13.4111|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 9.997ms
+2024-04-13 12:00:13.4111|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 12:00:13.4111|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1%0A - 200 - application/json;+charset=utf-8 11.8517ms
+2024-04-13 12:00:23.5674|WARN|Microsoft.AspNetCore.Server.Kestrel|As of "04/13/2024 06:30:23 +00:00", the heartbeat has been running for "00:00:08.5111105" which is longer than "00:00:01". This could be caused by thread pool starvation.
+2024-04-13 13:31:43.6373|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 13:31:44.1137|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-13 13:31:44.1137|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-13 13:31:44.1137|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-13 13:31:44.1137|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-13 13:31:44.1137|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-13 13:31:45.6819|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 13:31:47.2518|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 1568.9718ms
+2024-04-13 13:31:47.5455|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 13:31:47.5455|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 13:31:47.5502|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 4.5891ms
+2024-04-13 13:31:47.7014|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 155.8304ms
+2024-04-13 13:31:47.7942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 13:31:47.9268|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 132.6180ms
+2024-04-13 13:32:02.2750|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 13:32:02.2923|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 13:32:02.3454|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 13:32:02.3812|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 20.1768ms
+2024-04-13 13:32:02.3812|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 13:32:02.3812|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 912
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 718
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 708
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 663
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__0(IServiceProvider provider) in C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\Program.cs:line 53
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-13 13:32:05.7037|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 500 - text/plain;+charset=utf-8 3428.6858ms
+2024-04-13 13:32:43.0882|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 13:32:43.1048|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 16.5202ms
+2024-04-13 13:32:43.2319|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 13:32:43.2319|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 13:32:43.2398|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 7.5956ms
+2024-04-13 13:32:43.6047|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 369.9541ms
+2024-04-13 13:32:43.6934|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 13:32:43.7090|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 15.4762ms
+2024-04-13 13:32:53.4029|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 13:32:53.4029|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 13:32:53.4029|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 13:32:53.4029|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 1.1402ms
+2024-04-13 13:32:53.4029|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 13:32:53.4091|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 912
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 718
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 708
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 663
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__0(IServiceProvider provider) in C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\Program.cs:line 53
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-13 13:32:53.4091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 500 - text/plain;+charset=utf-8 10.0234ms
+2024-04-13 14:29:07.6531|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 14:29:07.9550|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-13 14:29:07.9555|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-13 14:29:07.9555|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-13 14:29:07.9555|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-13 14:29:07.9555|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-13 14:29:08.3380|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 14:29:08.6535|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 312.8615ms
+2024-04-13 14:29:08.6780|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 14:29:08.6780|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 14:29:08.6780|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 7.9660ms
+2024-04-13 14:29:08.7409|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 60.5019ms
+2024-04-13 14:29:08.8196|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 14:29:08.9434|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 123.6728ms
+2024-04-13 14:29:19.8048|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 14:29:19.8231|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:29:19.8636|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:29:19.8845|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 8.854ms
+2024-04-13 14:29:19.8845|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:29:19.8845|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 912
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 718
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 708
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 663
+   at Program.<>c.<<Main>$>b__0_0(IServiceProvider provider) in C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\Program.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-13 14:29:19.9649|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 500 - text/plain;+charset=utf-8 159.9620ms
+2024-04-13 14:33:57.2284|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 14:33:57.4433|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-13 14:33:57.4433|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-13 14:33:57.4433|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-13 14:33:57.4433|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-13 14:33:57.4433|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-13 14:33:58.3527|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 14:33:58.8806|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 526.6164ms
+2024-04-13 14:33:58.9036|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 14:33:58.9036|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 14:33:58.9185|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 14.7632ms
+2024-04-13 14:33:58.9910|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 84.4843ms
+2024-04-13 14:33:59.1065|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 14:33:59.2645|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 157.9425ms
+2024-04-13 14:34:11.8126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 14:34:11.8263|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:34:11.8529|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:34:11.8649|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 4.5772ms
+2024-04-13 14:34:11.8649|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:34:11.8649|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 912
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 718
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 708
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 663
+   at Program.<>c.<<Main>$>b__0_0(IServiceProvider provider) in C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\Program.cs:line 54
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-13 14:34:11.8946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 500 - text/plain;+charset=utf-8 81.9203ms
+2024-04-13 14:39:32.9469|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 14:39:32.9813|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 34.3790ms
+2024-04-13 14:39:33.0382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 14:39:33.0382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 14:39:33.0382|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 1.1552ms
+2024-04-13 14:39:33.0517|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 13.4034ms
+2024-04-13 14:39:33.1865|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 14:39:33.1983|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 11.9897ms
+2024-04-13 14:39:33.1983|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/favicon-32x32.png - - -
+2024-04-13 14:39:33.2207|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-04-13 14:39:33.2211|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/favicon-32x32.png - 200 628 image/png 17.7113ms
+2024-04-13 14:40:10.0145|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 14:40:10.0292|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 14.7256ms
+2024-04-13 14:40:10.1490|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 14:40:10.1490|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 14:40:10.1490|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 3.4532ms
+2024-04-13 14:40:10.2259|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 75.4781ms
+2024-04-13 14:40:10.5423|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 14:40:10.5526|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 10.2646ms
+2024-04-13 14:40:19.6105|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 14:40:19.6128|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:40:19.6128|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:40:27.3298|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved 3 label(s) for user with ID 1
+2024-04-13 14:40:28.1435|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 14:40:28.1435|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 8535.866ms
+2024-04-13 14:40:28.1435|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:40:28.1435|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 8540.1298ms
+2024-04-13 14:40:40.0068|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 14:40:40.0068|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 3.3869ms
+2024-04-13 14:40:40.0586|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 14:40:40.0586|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 14:40:40.0586|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 0.3138ms
+2024-04-13 14:40:40.0586|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 4.3661ms
+2024-04-13 14:40:40.1279|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 14:40:40.1279|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 6.1173ms
+2024-04-13 14:40:51.3875|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 14:40:51.3875|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:40:51.3875|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:40:51.3875|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved cached labels for user with ID 1
+2024-04-13 14:40:51.4209|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 14:40:51.4209|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 32.7706ms
+2024-04-13 14:40:51.4209|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:40:51.4209|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 33.8821ms
+2024-04-13 14:41:37.9942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1%0A%0A - - -
+2024-04-13 14:41:37.9942|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:41:37.9942|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:41:37.9942|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved cached labels for user with ID 1
+2024-04-13 14:41:37.9942|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 14:41:37.9942|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 5.5581ms
+2024-04-13 14:41:37.9942|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:41:37.9942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1%0A%0A - 200 - application/json;+charset=utf-8 7.2848ms
+2024-04-13 14:41:52.0479|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1%0A%0A%0A - - -
+2024-04-13 14:41:52.0479|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:41:52.0479|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:41:52.0492|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved cached labels for user with ID 1
+2024-04-13 14:41:52.0492|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 14:41:52.0492|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 1.0615ms
+2024-04-13 14:41:52.0492|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:41:52.0492|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1%0A%0A%0A - 200 - application/json;+charset=utf-8 2.0021ms
+2024-04-13 14:42:12.7291|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 14:42:12.7291|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:42:12.7291|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:42:12.7563|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved cached labels for user with ID 1
+2024-04-13 14:42:12.7563|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 14:42:12.7563|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 27.0751ms
+2024-04-13 14:42:12.7563|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:42:12.7563|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 28.2314ms
+2024-04-13 14:42:22.0240|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 14:42:22.0240|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:42:22.0240|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:42:22.0240|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved cached labels for user with ID 1
+2024-04-13 14:42:22.0240|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 14:42:22.0240|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 0.9701ms
+2024-04-13 14:42:22.0240|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:42:22.0240|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 1.7512ms
+2024-04-13 14:42:25.4203|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 14:42:25.4203|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:42:25.4203|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:42:25.4203|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved cached labels for user with ID 1
+2024-04-13 14:42:25.4203|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 14:42:25.4203|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 1.194ms
+2024-04-13 14:42:25.4203|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:42:25.4203|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 2.3902ms
+2024-04-13 14:42:27.5891|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 14:42:27.5891|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:42:27.5891|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 14:42:27.5891|INFO|Repository.Service.LabelServiceRepoLogic|Retrieved cached labels for user with ID 1
+2024-04-13 14:42:27.5891|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 14:42:27.5891|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 1.0274ms
+2024-04-13 14:42:27.5891|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 14:42:27.5891|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 1.8369ms
+2024-04-13 16:10:17.9367|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 16:10:18.1692|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-13 16:10:18.1692|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-13 16:10:18.1692|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-13 16:10:18.1692|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-13 16:10:18.1692|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-13 16:11:20.5523|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-13 16:11:20.7144|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-13 16:11:20.7144|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-13 16:11:20.7144|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-13 16:11:20.7144|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-13 16:11:20.7144|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-13 16:11:21.3930|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-13 16:11:21.9782|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 589.7776ms
+2024-04-13 16:11:22.0206|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-13 16:11:22.0206|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-13 16:11:22.0206|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 11.0064ms
+2024-04-13 16:11:22.2580|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 237.3491ms
+2024-04-13 16:11:22.3503|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-13 16:11:22.5470|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 196.5280ms
+2024-04-13 16:11:35.4754|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - - -
+2024-04-13 16:11:35.4877|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 16:11:35.5183|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetbylabelIdAndNotesId", controller = "Label"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetbylabelIdAndNotesId(Int32) on controller fundoo_application.Controllers.LabelController (FundooWebApp).
+2024-04-13 16:11:36.2926|INFO|Program|Retrieved 3 label(s) for user with ID 1
+2024-04-13 16:11:36.3796|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ModelLayer.Entity.label, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-13 16:11:36.3796|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 865.5296ms
+2024-04-13 16:11:36.3933|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
+2024-04-13 16:11:36.3933|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1?userid=1 - 200 - application/json;+charset=utf-8 918.5051ms

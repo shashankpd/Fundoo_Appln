@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ModelLayer.Entity
 {
-    public class usernotes
+    public class Notes
     {
         public int NoteId { get; set; }
         public string Title { get; set; }

@@ -177,9 +177,12 @@ C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\ne
 C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FundooWebApp.props
 C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\scopedcss\bundle\FundooWebApp.styles.css
-C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\FundooWebApp.csproj.CopyComplete
 C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\FundooWebApp.dll
 C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\refint\FundooWebApp.dll
 C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\FundooWebApp.pdb
 C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\FundooWebApp.genruntimeconfig.cache
 C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\ref\FundooWebApp.dll
+C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\obj\Debug\net8.0\FundooWe.2388917C.Up2Date
+C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application\bin\Debug\net8.0\StackExchange.Redis.dll

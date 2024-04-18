@@ -31,13 +31,13 @@ namespace CommonLayer.Model.Validation
                             if (!Regex.IsMatch(valid.password, @"^(?=.[a-z])(?=.[A-Z])(?=.\d)[a-zA-Z\d!@#$%^&]{8,16}$"))
 
                             {
-                                return new ValidationResult("Given Password is in correct Format");
+                                return new ValidationResult("Given Password is incorrect Format");
                             }
                         }
                     }
-                    else return new ValidationResult("Given LastName is in correct Format");
+                    else return new ValidationResult("Given LastName is incorrect Format");
                 }
-                else return new ValidationResult("Given FirstName is in correct Format");
+                else return new ValidationResult("Given FirstName is incorrect Format");
 
                 return ValidationResult.Success;
 

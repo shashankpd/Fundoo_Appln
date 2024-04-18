@@ -10,8 +10,8 @@ namespace ModelLayer.Entity
 {
     public class Registration
     {
-        [Required]
-        [UserRequestValidation]
+       // [Required]
+       // [UserRequestValidation]
         public string userid { get; set; }
         public string firstName { set; get; }
         public string lastName { set;get; }
