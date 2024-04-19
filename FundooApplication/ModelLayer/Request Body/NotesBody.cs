@@ -28,6 +28,8 @@ namespace ModelLayer.Request_Body
         public DateTime CreatedAt { get; set; }
 
         public DateTime ModifiedAt { get; set; }
-       
+
+        public string LabelName { get; set; }
+
     }
 }

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using ModelLayer.Response;
 using System.Data.SqlClient;
 
@@ -25,7 +26,7 @@ namespace fundoo_application.Controllers
 
         [HttpPost]
         [Authorize] 
-        public async Task<IActionResult> Addcollaborator(Collabarator collab)
+        public async Task<IActionResult> Addcollaborator(CollaboratorBody collab)
         {
             try
             {

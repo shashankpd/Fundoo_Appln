@@ -16,6 +16,9 @@ using System.Threading.Tasks;
 using static System.Net.WebRequestMethods;
 using ModelLayer.Entity;
 using NLog;
+using Confluent.Kafka;
+using RepositoryLayer.Helper;
+using ModelLayer.Request_Body;
 
 namespace Repository.Service
 {
@@ -25,7 +28,6 @@ namespace Repository.Service
 
         public static String Otp;
         public static string Email;
-
         public readonly DapperContext _context;
 
         private readonly ILogger _logger;
@@ -54,7 +56,7 @@ namespace Repository.Service
         }
 
 
-        public async Task<int> Addusers(Registration user)
+        public async Task<int> Addusers(ResgistrationBody user)
         {
             try
             {
@@ -74,6 +76,14 @@ namespace Repository.Service
                         user.emailId,
                         Password = hashedPassword // Pass the hashed password to the query parameter
                     });
+                    //-----------------------
+                    var registrationDetailsForPublishing = new RegistrationDetailsForPublishing(user);
+
+
+                    Helper help = new Helper();
+                    help.producer(registrationDetailsForPublishing);
+
+                    //-----------------------
 
                     return affectedRows;
                 }

@@ -1,5 +1,6 @@
 ﻿using Business.Interface;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using Repository.Interface;
 using System.Threading.Tasks;
 
@@ -14,7 +15,7 @@ namespace Business.Service
             this.usernotes = usernotes;
         }
 
-        public Task<int> Addnotes(int userid, Notes notes)
+        public Task<int> Addnotes(int userid, NotesBody notes)
         {
             return usernotes.Addnotes(userid,notes);
         }
@@ -28,7 +29,7 @@ namespace Business.Service
         {
             return usernotes.DeletenotesbyId(userid);
         }
-        public Task<int> EditbynoteId(int userid, int Noteid, Notes note)
+        public Task<int> EditbynoteId(int userid, int Noteid, NotesBody note)
         {
             return usernotes.EditbynoteId(userid,Noteid, note);
         }

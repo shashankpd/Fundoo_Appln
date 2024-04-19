@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "tEhyI9DEKpv9GIBPsQwyFMS8Ns8Cq4SZkqEAi2oHw8ppS9WsqVG7punLzc0wOJ0+V7E8GREJDEB1eunHti6BEg==",
+  "dgSpecHash": "9JNdjRwcCTJsMv7wBI+cmC3i/R1sIIXIg0FZlM9kO/9Je23qEyRYWIweWTmprHwA6jdv5Z0diMsnIrsEz2qHJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\SHASHANK\\source\\repos\\FundooApplication\\Business\\BusinessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SHASHANK\\.nuget\\packages\\bouncycastle.cryptography\\2.3.0\\bouncycastle.cryptography.2.3.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\confluent.kafka\\2.3.0\\confluent.kafka.2.3.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\librdkafka.redist\\2.3.0\\librdkafka.redist.2.3.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\mailkit\\4.4.0\\mailkit.4.4.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.3\\microsoft.aspnetcore.authentication.jwtbearer.8.0.3.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
@@ -42,6 +44,7 @@
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.formats.asn1\\8.0.0\\system.formats.asn1.8.0.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.4.1\\system.identitymodel.tokens.jwt.7.4.1.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.net.mail.abstractions\\1.1.21\\system.net.mail.abstractions.1.1.21.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",

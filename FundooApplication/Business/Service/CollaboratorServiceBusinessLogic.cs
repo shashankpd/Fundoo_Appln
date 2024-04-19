@@ -1,5 +1,6 @@
 ﻿using Business.Interface;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using Repository.Interface;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Business.Service
         }
         //start
 
-        public Task<int> Addcollaborator(Collabarator collab, int userid)
+        public Task<int> Addcollaborator(CollaboratorBody collab, int userid)
         {
             return collaborator.Addcollaborator(collab,userid);
         }

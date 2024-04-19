@@ -1,4 +1,5 @@
 ﻿using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Business.Interface
     {
         //start
 
-        public Task<int> Addcollaborator(Collabarator collab,int userid);
+        public Task<int> Addcollaborator(CollaboratorBody collab,int userid);
 
         public Task<IEnumerable<Collabarator>> Getbycollabid(int collabid, int userid);
 

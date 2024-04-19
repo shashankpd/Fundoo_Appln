@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace Repository.Interface
     public interface IRegistrationRepository
     {
         public Task<IEnumerable<Registration>> Getregdetails();
-        public Task<int> Addusers(Registration users);
+        public Task<int> Addusers(ResgistrationBody users);
 
         public Task<int> Deleteusers(int userid);
 

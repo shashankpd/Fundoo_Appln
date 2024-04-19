@@ -6,6 +6,7 @@ using Dapper;
 using Newtonsoft.Json;
 using StackExchange.Redis;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 
 namespace Repository.Service
 {
@@ -20,7 +21,7 @@ namespace Repository.Service
             _cache = redisConnection.GetDatabase();
         }
 
-        public async Task<int> Addnotes(int userid, Notes notes)
+        public async Task<int> Addnotes(int userid, NotesBody notes)
         {
             var query = @"
                 INSERT INTO Notes (NoteId, Title, Description, BgColor, ImagePath, Remainder, IsArchive, IsPinned, IsTrash, CreatedAt, ModifiedAt, LabelName, Userid)
@@ -28,10 +29,11 @@ namespace Repository.Service
 
             using (var connection = _context.CreateConnection())
             {
-                var affectedRows = await connection.ExecuteAsync(query, new { notes.NoteId, notes.Title, notes.Description, notes.BgColor, notes.ImagePath, notes.Remainder, notes.IsArchive, notes.Ispinned, notes.IsTrash, notes.CreatedAt, notes.ModifiedAt, notes.LabelName, notes.userid });
+                var affectedRows = await connection.ExecuteAsync(query, new { notes.NoteId, notes.Title, notes.Description, notes.BgColor, notes.ImagePath, notes.Remainder, notes.IsArchive, notes.Ispinned, notes.IsTrash, notes.CreatedAt, notes.ModifiedAt,notes.LabelName
+                    ,Userid= userid });
 
                 // Clear cache after adding a new note
-                var cacheKey = $"notes_{notes.userid}";
+                var cacheKey = $"notes_{userid}";
                 await _cache.KeyDeleteAsync(cacheKey);
 
                 return affectedRows;
@@ -83,7 +85,7 @@ namespace Repository.Service
             }
         }
 
-        public async Task<int> EditbynoteId(int Userid, int Noteid, Notes note)
+        public async Task<int> EditbynoteId(int Userid, int Noteid, NotesBody note)
         {
             var query = @"
                 UPDATE Notes 
@@ -99,7 +101,7 @@ namespace Repository.Service
                     ModifiedAt = @modifiedat, 
                     LabelName = @labelname, 
                     userid = @userid 
-                WHERE NoteId = @noteid";
+                WHERE NoteId = @noteid and userid=@Userid";
 
             using (var connection = _context.CreateConnection())
             {
@@ -116,7 +118,7 @@ namespace Repository.Service
                     istrash = note.IsTrash,
                     createat = note.CreatedAt,
                     modifiedat = note.ModifiedAt,
-                    labelname = note.LabelName,
+                    labelname=note.LabelName,
                     userid = Userid
                 });
 

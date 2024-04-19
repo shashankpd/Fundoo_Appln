@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using ModelLayer.Response;
 using Org.BouncyCastle.Utilities;
 using System.Data.SqlClient;
@@ -25,7 +26,7 @@ namespace fundoo_application.Controllers
 
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Addnotes(Notes notes)
+        public async Task<IActionResult> Addnotes(NotesBody notes)
         {
             try
             {
@@ -177,7 +178,7 @@ namespace fundoo_application.Controllers
 
         [Authorize]
         [HttpPut("{Noteid}")]
-        public async Task<IActionResult> EditByNoteId(int Noteid, Notes note)
+        public async Task<IActionResult> EditByNoteId(int Noteid, NotesBody note)
         {
             try
             {
@@ -195,14 +196,28 @@ namespace fundoo_application.Controllers
 
                 // Call the business logic layer to edit the note
                 var details = await Iusernotes_bl.EditbynoteId(authenticatedUserId, Noteid, note);
-
-                var response = new ResponseModel<int>
+                if (details > 0)
                 {
-                    Message = "Note updated successfully",
+
+
+
+                    var response = new ResponseModel<int>
+                    {
+                        Message = "Note updated successfully",
+                        Data = details
+                    };
+
+                    return Ok(response);
+                }
+                var respons = new ResponseModel<int>
+                {
+                    Success = false,
+                    Message = "Note not found",
                     Data = details
                 };
 
-                return Ok(response);
+                return NotFound(respons);
+
             }
             catch (NotFoundException ex)
             {

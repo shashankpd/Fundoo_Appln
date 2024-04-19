@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using ModelLayer.Response;
 using Newtonsoft.Json.Linq;
 using Org.BouncyCastle.Utilities;
@@ -64,14 +65,14 @@ namespace fundoo_application.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Addusers(Registration users)
+        public async Task<IActionResult> Addusers(ResgistrationBody users)
         {
             try
             {
                 var details = await Iregistration_bl.Addusers(users);
                 if (details>0)
                 {
-                    var response = new ResponseModel<Registration>
+                    var response = new ResponseModel<ResgistrationBody>
                     {
                         Success = true,
                         Message = "User Registration Successful"
@@ -88,7 +89,7 @@ namespace fundoo_application.Controllers
             {
                 if (ex is DuplicateEmailException)
                 {
-                    var response = new ResponseModel<Registration>
+                    var response = new ResponseModel<ResgistrationBody>
                     {
                         Success = false,
                         Message = ex.Message
@@ -99,7 +100,7 @@ namespace fundoo_application.Controllers
                 }
                 else if (ex is InvalidEmailFormatException)
                 {
-                    var response = new ResponseModel<Registration>
+                    var response = new ResponseModel<ResgistrationBody>
                     {
                         Success = false,
                         Message = ex.Message

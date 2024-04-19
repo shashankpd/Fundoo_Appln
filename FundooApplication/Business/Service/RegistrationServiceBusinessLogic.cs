@@ -1,6 +1,7 @@
 ﻿using Business.Interface;
 using Microsoft.Extensions.Configuration;
 using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using Repository.Interface;
 using Repository.Service;
 using System;
@@ -29,7 +30,7 @@ namespace Business.Service
             return Registration.Getregdetails();
         }
 
-        public Task<int> Addusers(Registration users)
+        public Task<int> Addusers(ResgistrationBody users)
         {
             return Registration.Addusers(users);
         }

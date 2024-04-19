@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "x6svt1XgbO6kjFnHrN5oLJOvI623fXTZE7UWyra1RmGJO5arbP/hqT9lCo1rKZkvsLNv1gg6TehZYDZn8qWk6A==",
+  "dgSpecHash": "oAiuwAE/q6ul1Xb9C1DcAolNQ/SSnJr/EKZbcZGgc6gUBTiGdEY+UcAj9K+3qzLSbA2R2hEs6GlVvV3F+rvPCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\SHASHANK\\source\\repos\\FundooApplication\\ModelLayer\\ModelLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\confluent.kafka\\2.3.0\\confluent.kafka.2.3.0.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\librdkafka.redist\\2.3.0\\librdkafka.redist.2.3.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
@@ -17,7 +19,8 @@
     "C:\\Users\\SHASHANK\\.nuget\\packages\\nlog.web.aspnetcore\\5.3.8\\nlog.web.aspnetcore.5.3.8.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\stackexchange.redis\\2.7.33\\stackexchange.redis.2.7.33.nupkg.sha512",
-    "C:\\Users\\SHASHANK\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

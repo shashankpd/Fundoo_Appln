@@ -493,3 +493,37 @@ Error Number:137,State:2,Class:15
 2024-04-18 14:47:48.3316|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp) in 681.9596ms
 2024-04-18 14:47:48.3316|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'fundoo_application.Controllers.LabelController.GetbylabelIdAndNotesId (FundooWebApp)'
 2024-04-18 14:47:48.3359|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/api/Label/1 - 200 - application/json;+charset=utf-8 813.3860ms
+2024-04-18 17:37:34.1779|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-18 17:37:34.3898|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-18 17:37:34.3898|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-18 17:37:34.3898|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-18 17:37:34.3898|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-18 17:37:34.3898|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-18 17:37:37.8467|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-18 17:37:38.3586|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 513.7142ms
+2024-04-18 17:37:38.5865|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-18 17:37:38.5865|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-18 17:37:38.6014|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 14.7877ms
+2024-04-18 17:37:38.6983|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 111.8169ms
+2024-04-18 17:37:38.9661|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-18 17:37:39.2740|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 307.8894ms
+2024-04-18 17:43:26.7106|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-18 17:43:26.9067|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-18 17:43:26.9067|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-18 17:43:26.9067|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-18 17:43:26.9067|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-18 17:43:26.9067|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application
+2024-04-18 17:43:27.7473|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/index.html - - -
+2024-04-18 17:43:28.1822|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/index.html - 200 - text/html;charset=utf-8 435.5095ms
+2024-04-18 17:43:28.2051|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - - -
+2024-04-18 17:43:28.2051|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/_vs/browserLink - - -
+2024-04-18 17:43:28.2109|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript;+charset=utf-8 5.5869ms
+2024-04-18 17:43:28.2580|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 52.8370ms
+2024-04-18 17:43:28.3597|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - - -
+2024-04-18 17:43:28.5705|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7141/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 210.6786ms
+2024-04-18 17:55:01.6276|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-18 17:55:01.9167|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7141
+2024-04-18 17:55:01.9167|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5208
+2024-04-18 17:55:01.9167|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-18 17:55:01.9167|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-18 17:55:01.9167|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\FundooApplication\fundoo application

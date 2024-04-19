@@ -1,4 +1,5 @@
 ﻿using ModelLayer.Entity;
+using ModelLayer.Request_Body;
 using Repository.Interface;
 
 using System;
@@ -13,7 +14,7 @@ namespace Repository.Interface
     {
         //start
 
-        public Task<int> Addcollaborator(Collabarator collab,int userid);
+        public Task<int> Addcollaborator(CollaboratorBody collab,int userid);
 
         public Task<IEnumerable<Collabarator>> Getbycollabid(int collabid,int userid);
 
